@@ -30,6 +30,7 @@ namespace Rectangle
             length = l;
         }
         public void widths(int w)
+
         {
             width = w;
         }
@@ -52,7 +53,7 @@ namespace Rectangle
             int location = x * y;
             int areas = length * width;
 
-            if (location == areas)
+            if (location >= areas)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("The rectangle is contained");
